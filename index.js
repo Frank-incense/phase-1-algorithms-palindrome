@@ -1,11 +1,23 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let s = word.length-1
+  for (let i = 0; i < word.length; i++){
+    if (word[i] !== word[s]){
+      return false
+    }
+    s--
+  }
+  return true
 }
 
 /* 
   Add your pseudocode here
 */
-
+// we have a word
+// iterate over the word 
+// Check whether the character at this position
+// matches a character in the same reverse position of the word
+// true if it matches and false if it does not
 /*
   Add written explanation of your solution here
 */
